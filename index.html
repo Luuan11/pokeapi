@@ -12,13 +12,28 @@
     <main class="main">
 
         <section class="pokedex">
-            <img src="" alt="">
+            <img class="section-pokemon" src="#" alt="">
+
+            <h1 class="pokeinfo">
+                <span class="poke-number"></span> -
+                <span class="poke-name"></span>
+            </h1>
+
+            <form class="form">
+                <input type="search" class="input-search"
+                placeholder="Nome ou número do pokemon" required>
+            </form>
+
+            <div class="section-btn">
+                <button class="button btn-prev">&lt;  Prev</button>
+                <button class="button btn-next">Next  &gt;</button>
+            </div>
 
             <img src="assets/img/pokedex.png" alt="image da pokedex">
         </section>
 
     </main>
 
-    <script src="assets/js/main.js"></script>
+    <script defer src="assets/js/main.js"></script>
 </body>
 </html>

@@ -4,10 +4,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Roboto Mono", Arial, Helvetica, sans-serif;
 }
 
 body{
-    font-family: "Roboto Mono", Arial, Helvetica, sans-serif;
     text-align: center;
     background-image: linear-gradient(105deg, #C0F2E9 14.79%, #F6C093 50.52%, #C4D5FA 87.02%);
     background-color: #fff;
@@ -18,9 +18,90 @@ body{
     display: inline-block;
     margin-top: 5%;
     padding: 10px;
+    position: relative;
 }
 
 .section{
     width: 100%;
     max-width: 425px;
+}
+
+.section-pokemon{
+    position: absolute;
+    bottom: 55%;
+    left: 50%;
+    transform: translate(-63%, 10%);
+    height: 15%;
+}
+
+.pokeinfo{
+    position: absolute;
+    font-weight: 600;
+    color: rgb(145, 142, 142);
+    top: 54%;
+    right: 25%;
+    font-size: clamp(8px, 5vw, 25px);
+}
+
+.poke-name{
+    color: #0f0202;
+    text-transform: capitalize;
+}
+
+.poke-number{
+    color: #3a3a3a;
+}
+
+.form{
+    position: absolute;
+    width: 65%;
+    top: 65%;
+    left: 13.5%;
+}
+
+.input-search{
+    width: 100%;
+    padding: 4%;
+    outline: none;
+    background-color: #e3e3e3;
+    border: 2px solid #0f0202;
+    font-weight: 600;
+    color: #0f0202;
+    border-radius: 13px 5px;
+    font-size: clamp(8px, 5vw, 1rem);
+    box-shadow: -3px 3px 0 #888, -5px 5px 0 #333;
+}
+
+.section-btn{
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    width: 65%;
+    transform: translate(-57%, 0);
+    display: flex;
+    gap: 20px;
+}
+
+.button{
+    cursor: pointer;
+    width: 50%;
+    padding: 5%;
+    border: 2px solid #0f0202;
+    font-size: clamp(5px, 5vw, 1rem);
+    font-weight: 600;
+    background-color: #e3e3e3;
+    box-shadow: -2px 3px 0 #888, -3px 5px 0 #333;
+}
+
+.btn-prev{
+    border-radius: 10px 5px;
+}
+
+.btn-next{
+    border-radius: 5px 10px;
+}
+
+.button:active{
+    box-shadow: inset -4px 4px 0 #888;
+    font-size: .9rem;
 }
